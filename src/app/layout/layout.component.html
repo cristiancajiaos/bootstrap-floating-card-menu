@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-12 col-lg-6">
+    <div class="form-group">
+      <label>Título</label>
+      <input type="text" class="form-control" [(ngModel)]="titulo"/>
+    </div>
+  </div>
+  <div class="col-12 col-lg-6">
+    <div class="form-group">
+      <label>Número de cabecera</label>
+      <input type="number" class="form-control" [(ngModel)]="numeroCabecera" min="1" max="6"/>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-lg-10 offset-lg-1">
+    <div class="card custom-card">
+      <div class="card-header bg-primary">
+        <div class="title text-center mx-auto bg-danger">
+          <h1 class="card-title text-white" *ngIf="numeroCabecera == 1">{{titulo}}</h1>
+          <h2 class="card-title text-white" *ngIf="numeroCabecera == 2">{{titulo}}</h2>
+          <h3 class="card-title text-white" *ngIf="numeroCabecera == 3">{{titulo}}</h3>
+          <h4 class="card-title text-white" *ngIf="numeroCabecera == 4">{{titulo}}</h4>
+          <h5 class="card-title text-white" *ngIf="numeroCabecera == 5">{{titulo}}</h5>
+          <h6 class="card-title text-white" *ngIf="numeroCabecera == 6">{{titulo}}</h6>
+        </div>
+        <div class="card-menu float-right">
+          <a href="#" class="text-white">
+            <i class="fas fa-user fa-fw"></i>
+          </a>
+        </div>
+      </div>
+      <div class="card-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet mi neque. Etiam ligula leo,
+          ultrices a quam eget, ultrices ultricies ligula. Duis ac turpis finibus, commodo eros vitae, semper est. Sed
+          volutpat ornare cursus. Vivamus vulputate vitae eros a rhoncus. Nam sapien ligula, egestas ut dui at, finibus
+          pulvinar neque. Aenean sollicitudin tellus id tempor luctus. </p>
+      </div>
+    </div>
+  </div>
+</div>
